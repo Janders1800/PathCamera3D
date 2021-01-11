@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/pathCamera3D/CameraPath3D.gd" type="Script" id=1]
+
+[sub_resource type="Curve3D" id=1]
+_data = {
+"points": PoolVector3Array(  ),
+"tilts": PoolRealArray(  )
+}
+
+[node name="PathCamera3D" type="Path"]
+curve = SubResource( 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Path_Follow" type="PathFollow" parent="."]
+rotation_mode = 0
+cubic_interp = false
+loop = false
+
+[node name="Final_Look_At" type="Spatial" parent="Path_Follow"]
+
+[node name="Camera_Path" type="Camera" parent="Path_Follow"]

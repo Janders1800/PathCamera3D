@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Path",
+"class": "PathCamera3D",
+"language": "GDScript",
+"path": "res://addons/pathCamera3D/CameraPath3D.gd"
+} ]
+_global_script_class_icons={
+"PathCamera3D": "res://addons/pathCamera3D/PathCamera3D.png"
+}
+
+[application]
+
+config/name="PathCamera3D"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
