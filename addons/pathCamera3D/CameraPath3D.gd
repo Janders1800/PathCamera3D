@@ -16,7 +16,7 @@ var transmit: bool = false
 onready var child_path_node: Path
 onready var path_node: PathFollow = $Path_Follow
 onready var look_at_node : Spatial = $Path_Follow/Final_Look_At
-onready var camera_node : Position3D = $Path_Follow/Camera_Path
+onready var camera_node : Camera = $Path_Follow/Camera_Path
 
 
 func _ready():
